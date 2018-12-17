@@ -1,0 +1,21 @@
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+
+#python and django
+
+*.pyc
+
+__ pycache __
+
+myvenv
+
+db.sqlite3
+
+/static/admin
+/static/images
+
+.DS_Store
+

@@ -1,0 +1,214 @@
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=%5B%271600+Amphitheatre+Parkway%2C+Mountain+View%2C+CA%27%2C+%27Ittina+Neela%2C+Andapura%2C+Bangalore%27%2C+%22Pabba%27s%2C+lalbagh%2C+mangalore%22%2C+%27Shreshta+sweet%2C+car+street%2C+Karkala%27%5D&key=AIzaSyBXJtzYE8ERi-nJOGAkKohqsCENEJLU36M HTTP/1.1" 200 1169
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\rahul\Envs\genv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\rahul\Envs\genv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\rahul\Envs\genv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\rahul\Desktop\Projects\Geocoder\geocoder\app\views.py", line 29, in main
+    return JsonResponse({"data": createGeoLocationFile(data, populateGeocodes(data), sheetname)})
+  File "C:\Users\rahul\Envs\genv\lib\site-packages\django\http\response.py", line 558, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "c:\python\python36-32\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "c:\python\python36-32\Lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "c:\python\python36-32\Lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\rahul\Envs\genv\lib\site-packages\django\core\serializers\json.py", line 104, in default
+    return super().default(o)
+  File "c:\python\python36-32\Lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'JsonResponse' is not JSON serializable
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=%5B%271600+Amphitheatre+Parkway%2C+Mountain+View%2C+CA%27%2C+%27Ittina+Neela%2C+Andapura%2C+Bangalore%27%5D&key=AIzaSyBXJtzYE8ERi-nJOGAkKohqsCENEJLU36M HTTP/1.1" 200 793
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\rahul\Envs\genv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\rahul\Envs\genv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\rahul\Envs\genv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\rahul\Desktop\Projects\Geocoder\geocoder\app\views.py", line 29, in main
+    return JsonResponse({"data": createGeoLocationFile(data, populateGeocodes(data), sheetname)})
+  File "C:\Users\rahul\Envs\genv\lib\site-packages\django\http\response.py", line 558, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "c:\python\python36-32\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "c:\python\python36-32\Lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "c:\python\python36-32\Lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\rahul\Envs\genv\lib\site-packages\django\core\serializers\json.py", line 104, in default
+    return super().default(o)
+  File "c:\python\python36-32\Lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'JsonResponse' is not JSON serializable
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=%5B%271600+Amphitheatre+Parkway%2C+Mountain+View%2C+CA%27%2C+%27Ittina+Neela%2C+Andapura%2C+Bangalore%27%2C+%22Pabba%27s%2C+lalbagh%2C+mangalore%22%2C+%27Shreshta+sweet%2C+car+street%2C+Karkala%27%5D&key=AIzaSyBXJtzYE8ERi-nJOGAkKohqsCENEJLU36M HTTP/1.1" 200 1169
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=%5B%271600+Amphitheatre+Parkway%2C+Mountain+View%2C+CA%27%2C+%27Ittina+Neela%2C+Andapura%2C+Bangalore%27%5D&key=AIzaSyBXJtzYE8ERi-nJOGAkKohqsCENEJLU36M HTTP/1.1" 200 793
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=%5B%271600+Amphitheatre+Parkway%2C+Mountain+View%2C+CA%27%2C+%27Ittina+Neela%2C+Andapura%2C+Bangalore%27%5D&key=AIzaSyBXJtzYE8ERi-nJOGAkKohqsCENEJLU36M HTTP/1.1" 200 793
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=%5B%271600+Amphitheatre+Parkway%2C+Mountain+View%2C+CA%27%2C+%27Ittina+Neela%2C+Andapura%2C+Bangalore%27%2C+%22Pabba%27s%2C+lalbagh%2C+mangalore%22%2C+%27Shreshta+sweet%2C+car+street%2C+Karkala%27%5D&key=AIzaSyBXJtzYE8ERi-nJOGAkKohqsCENEJLU36M HTTP/1.1" 200 1169
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=%5B%271600+Amphitheatre+Parkway%2C+Mountain+View%2C+CA%27%2C+%27Ittina+Neela%2C+Andapura%2C+Bangalore%27%5D&key=AIzaSyBXJtzYE8ERi-nJOGAkKohqsCENEJLU36M HTTP/1.1" 200 793
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\rahul\Envs\genv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\rahul\Envs\genv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\rahul\Envs\genv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\rahul\Desktop\Projects\Geocoder\geocoder\app\views.py", line 29, in main
+    return JsonResponse(createGeoLocationFile(data, populateGeocodes(data), sheetname))
+  File "C:\Users\rahul\Desktop\Projects\Geocoder\geocoder\app\views.py", line 49, in createGeoLocationFile
+    filename = str(MEDIA_ROOT + "/" + uuid.uuid4() + ".xlsx")
+TypeError: must be str, not UUID
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=%5B%271600+Amphitheatre+Parkway%2C+Mountain+View%2C+CA%27%2C+%27Ittina+Neela%2C+Andapura%2C+Bangalore%27%2C+%22Pabba%27s%2C+lalbagh%2C+mangalore%22%2C+%27Shreshta+sweet%2C+car+street%2C+Karkala%27%5D&key=AIzaSyBXJtzYE8ERi-nJOGAkKohqsCENEJLU36M HTTP/1.1" 200 1169
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=%5B%271600+Amphitheatre+Parkway%2C+Mountain+View%2C+CA%27%2C+%27Ittina+Neela%2C+Andapura%2C+Bangalore%27%5D&key=AIzaSyBXJtzYE8ERi-nJOGAkKohqsCENEJLU36M HTTP/1.1" 200 793
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=%5B%271600+Amphitheatre+Parkway%2C+Mountain+View%2C+CA%27%2C+%27Ittina+Neela%2C+Andapura%2C+Bangalore%27%2C+%22Pabba%27s%2C+lalbagh%2C+mangalore%22%2C+%27Shreshta+sweet%2C+car+street%2C+Karkala%27%5D&key=AIzaSyBXJtzYE8ERi-nJOGAkKohqsCENEJLU36M HTTP/1.1" 200 1169
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=%5B%271600+Amphitheatre+Parkway%2C+Mountain+View%2C+CA%27%2C+%27Ittina+Neela%2C+Andapura%2C+Bangalore%27%5D&key=AIzaSyBXJtzYE8ERi-nJOGAkKohqsCENEJLU36M HTTP/1.1" 200 793
+WARNING:django.request:Not Found: /favicon.ico
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=%5B%271600+Amphitheatre+Parkway%2C+Mountain+View%2C+CA%27%2C+%27Ittina+Neela%2C+Andapura%2C+Bangalore%27%5D&key=AIzaSyBXJtzYE8ERi-nJOGAkKohqsCENEJLU36M HTTP/1.1" 200 793
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=%5B%271600+Amphitheatre+Parkway%2C+Mountain+View%2C+CA%27%2C+%27Ittina+Neela%2C+Andapura%2C+Bangalore%27%2C+%22Pabba%27s%2C+lalbagh%2C+mangalore%22%2C+%27Shreshta+sweet%2C+car+street%2C+Karkala%27%5D&key=AIzaSyBXJtzYE8ERi-nJOGAkKohqsCENEJLU36M HTTP/1.1" 200 1169
+WARNING:django.request:Not Found: /favicon.ico
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=%5B%271600+Amphitheatre+Parkway%2C+Mountain+View%2C+CA%27%2C+%27Ittina+Neela%2C+Andapura%2C+Bangalore%27%2C+%22Pabba%27s%2C+lalbagh%2C+mangalore%22%2C+%27Shreshta+sweet%2C+car+street%2C+Karkala%27%5D&key=AIzaSyBXJtzYE8ERi-nJOGAkKohqsCENEJLU36M HTTP/1.1" 200 1169
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=%5B%271600+Amphitheatre+Parkway%2C+Mountain+View%2C+CA%27%2C+%27Ittina+Neela%2C+Andapura%2C+Bangalore%27%5D&key=AIzaSyBXJtzYE8ERi-nJOGAkKohqsCENEJLU36M HTTP/1.1" 200 793
+WARNING:django.request:Not Found: /favicon.ico
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=%5B%271600+Amphitheatre+Parkway%2C+Mountain+View%2C+CA%27%2C+%27Ittina+Neela%2C+Andapura%2C+Bangalore%27%2C+%22Pabba%27s%2C+lalbagh%2C+mangalore%22%2C+%27Shreshta+sweet%2C+car+street%2C+Karkala%27%5D&key=AIzaSyBXJtzYE8ERi-nJOGAkKohqsCENEJLU36M HTTP/1.1" 200 1169
+WARNING:django.request:Not Found: /undefined
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\rahul\Envs\genv\lib\site-packages\openpyxl\reader\excel.py", line 121, in _validate_archive
+    archive = ZipFile(filename, 'r', ZIP_DEFLATED)
+  File "c:\python\python36-32\Lib\zipfile.py", line 1100, in __init__
+    self._RealGetContents()
+  File "c:\python\python36-32\Lib\zipfile.py", line 1168, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\rahul\Envs\genv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\rahul\Envs\genv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\rahul\Envs\genv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\rahul\Desktop\Projects\Geocoder\geocoder\app\views.py", line 20, in main
+    book = openpyxl.load_workbook(addressfile)
+  File "C:\Users\rahul\Envs\genv\lib\site-packages\openpyxl\reader\excel.py", line 174, in load_workbook
+    archive = _validate_archive(filename)
+  File "C:\Users\rahul\Envs\genv\lib\site-packages\openpyxl\reader\excel.py", line 124, in _validate_archive
+    archive = ZipFile(f, 'r', ZIP_DEFLATED)
+  File "c:\python\python36-32\Lib\zipfile.py", line 1100, in __init__
+    self._RealGetContents()
+  File "c:\python\python36-32\Lib\zipfile.py", line 1168, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=%5B%271600+Amphitheatre+Parkway%2C+Mountain+View%2C+CA%27%2C+%27Ittina+Neela%2C+Andapura%2C+Bangalore%27%5D&key=AIzaSyBXJtzYE8ERi-nJOGAkKohqsCENEJLU36M HTTP/1.1" 200 793
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=%5B%271600+Amphitheatre+Parkway%2C+Mountain+View%2C+CA%27%2C+%27Ittina+Neela%2C+Andapura%2C+Bangalore%27%2C+%22Pabba%27s%2C+lalbagh%2C+mangalore%22%2C+%27Shreshta+sweet%2C+car+street%2C+Karkala%27%5D&key=AIzaSyBXJtzYE8ERi-nJOGAkKohqsCENEJLU36M HTTP/1.1" 200 1169
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=%5B%271600+Amphitheatre+Parkway%2C+Mountain+View%2C+CA%27%2C+%27Ittina+Neela%2C+Andapura%2C+Bangalore%27%2C+%22Pabba%27s%2C+lalbagh%2C+mangalore%22%2C+%27Shreshta+sweet%2C+car+street%2C+Karkala%27%5D&key=AIzaSyBXJtzYE8ERi-nJOGAkKohqsCENEJLU36M HTTP/1.1" 200 1169
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=%5B%271600+Amphitheatre+Parkway%2C+Mountain+View%2C+CA%27%2C+%27Ittina+Neela%2C+Andapura%2C+Bangalore%27%5D&key=AIzaSyBXJtzYE8ERi-nJOGAkKohqsCENEJLU36M HTTP/1.1" 200 793
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=%5B%271600+Amphitheatre+Parkway%2C+Mountain+View%2C+CA%27%2C+%27Ittina+Neela%2C+Andapura%2C+Bangalore%27%2C+%22Pabba%27s%2C+lalbagh%2C+mangalore%22%2C+%27Shreshta+sweet%2C+car+street%2C+Karkala%27%5D&key=AIzaSyBXJtzYE8ERi-nJOGAkKohqsCENEJLU36M HTTP/1.1" 200 1169
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\rahul\Envs\genv\lib\site-packages\openpyxl\reader\excel.py", line 121, in _validate_archive
+    archive = ZipFile(filename, 'r', ZIP_DEFLATED)
+  File "c:\python\python36-32\Lib\zipfile.py", line 1100, in __init__
+    self._RealGetContents()
+  File "c:\python\python36-32\Lib\zipfile.py", line 1168, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\rahul\Envs\genv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\rahul\Envs\genv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\rahul\Envs\genv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\rahul\Desktop\Projects\Geocoder\geocoder\app\views.py", line 20, in main
+    book = openpyxl.load_workbook(addressfile)
+  File "C:\Users\rahul\Envs\genv\lib\site-packages\openpyxl\reader\excel.py", line 174, in load_workbook
+    archive = _validate_archive(filename)
+  File "C:\Users\rahul\Envs\genv\lib\site-packages\openpyxl\reader\excel.py", line 124, in _validate_archive
+    archive = ZipFile(f, 'r', ZIP_DEFLATED)
+  File "c:\python\python36-32\Lib\zipfile.py", line 1100, in __init__
+    self._RealGetContents()
+  File "c:\python\python36-32\Lib\zipfile.py", line 1168, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\rahul\Envs\genv\lib\site-packages\openpyxl\reader\excel.py", line 121, in _validate_archive
+    archive = ZipFile(filename, 'r', ZIP_DEFLATED)
+  File "c:\python\python36-32\Lib\zipfile.py", line 1100, in __init__
+    self._RealGetContents()
+  File "c:\python\python36-32\Lib\zipfile.py", line 1168, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\rahul\Envs\genv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\rahul\Envs\genv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\rahul\Envs\genv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\rahul\Desktop\Projects\Geocoder\geocoder\app\views.py", line 20, in main
+    book = openpyxl.load_workbook(addressfile)
+  File "C:\Users\rahul\Envs\genv\lib\site-packages\openpyxl\reader\excel.py", line 174, in load_workbook
+    archive = _validate_archive(filename)
+  File "C:\Users\rahul\Envs\genv\lib\site-packages\openpyxl\reader\excel.py", line 124, in _validate_archive
+    archive = ZipFile(f, 'r', ZIP_DEFLATED)
+  File "c:\python\python36-32\Lib\zipfile.py", line 1100, in __init__
+    self._RealGetContents()
+  File "c:\python\python36-32\Lib\zipfile.py", line 1168, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=%5B%271600+Amphitheatre+Parkway%2C+Mountain+View%2C+CA%27%2C+%27Ittina+Neela%2C+Andapura%2C+Bangalore%27%5D&key=AIzaSyBXJtzYE8ERi-nJOGAkKohqsCENEJLU36M HTTP/1.1" 200 793
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=%5B%271600+Amphitheatre+Parkway%2C+Mountain+View%2C+CA%27%2C+%27Ittina+Neela%2C+Andapura%2C+Bangalore%27%5D&key=AIzaSyBXJtzYE8ERi-nJOGAkKohqsCENEJLU36M HTTP/1.1" 200 793
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=%5B%271600+Amphitheatre+Parkway%2C+Mountain+View%2C+CA%27%2C+%27Ittina+Neela%2C+Andapura%2C+Bangalore%27%5D&key=AIzaSyBXJtzYE8ERi-nJOGAkKohqsCENEJLU36M HTTP/1.1" 200 793
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.security.csrf:Forbidden (CSRF token missing or incorrect.): /
+WARNING:django.security.csrf:Forbidden (CSRF token missing or incorrect.): /
+WARNING:django.security.csrf:Forbidden (CSRF token missing or incorrect.): /
+WARNING:django.security.csrf:Forbidden (CSRF token missing or incorrect.): /
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=%5B%271600+Amphitheatre+Parkway%2C+Mountain+View%2C+CA%27%2C+%27Ittina+Neela%2C+Andapura%2C+Bangalore%27%2C+%22Pabba%27s%2C+lalbagh%2C+mangalore%22%2C+%27Shreshta+sweet%2C+car+street%2C+Karkala%27%5D&key=AIzaSyBXJtzYE8ERi-nJOGAkKohqsCENEJLU36M HTTP/1.1" 200 None
+ERROR:root:2019-01-07 16:03:11.438543:REQUEST_DENIED (This IP, site or mobile application is not authorized to use this API key. Request received from IP address 43.224.129.199, with empty referer)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=%5B%271600+Amphitheatre+Parkway%2C+Mountain+View%2C+CA%27%2C+%27Ittina+Neela%2C+Andapura%2C+Bangalore%27%2C+%22Pabba%27s%2C+lalbagh%2C+mangalore%22%2C+%27Shreshta+sweet%2C+car+street%2C+Karkala%27%5D&key=AIzaSyBXJtzYE8ERi-nJOGAkKohqsCENEJLU36M HTTP/1.1" 200 1169

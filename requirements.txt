@@ -1,6 +1,6 @@
 certifi==2018.11.29
 chardet==3.0.4
-Django==2.1.4
+Django==2.1.11
 et-xmlfile==1.0.1
 googlemaps==3.0.2
 idna==2.8
